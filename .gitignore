@@ -1,0 +1,9 @@
+dist
+*.egg-info
+*.pyc
+*~
+# eclipse
+.settings
+.project
+.pydevproject
+
