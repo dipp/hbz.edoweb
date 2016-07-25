@@ -1,19 +1,23 @@
 hbz.edoweb
 ==========
 
-hbz.edoweb ist ein Pythonmodul, das den Umgang mit der Elastic Search Komponente
-von `edoweb`_ leichter machen soll. 
+hbz.edoweb ist ein Pythonmodul, das den Umgang mit der Elasticsearch Komponente
+von `edoweb`_ erleichtern soll. Zwei Kommandozeilentools stehen zur Verfügung: 
 
- reindex
+reindex
    Zum Neuindexieren eines Index unter Verwendung einer neuen Konfiguration
   
- json_es
-   Pretty Printing einer elastic search Suche, als Ersatz für json_pp 
- 
+json_es
+   Pretty Printing einer Elasticsearch Suche, als Ersatz für json_pp 
+
 
 Installation
 ------------
 
+Das Modul hängt ab vom offiziellen `Python client für Elasticsearch`_. Da Edoweb
+Elasticsearch in Version 1.1.0 verwendet, ist die richtige Version des clients entscheident.
+Um die systemweite Pythoninstallation nicht zu verändern, wird eine eigene virtuelle Pythonumgebung 
+verwendet. Unter Ubuntu: 
 
 .. code-block:: bash
 
@@ -39,3 +43,4 @@ in edoweb:/usr/share/elasticsearch:
 
        
 .. _edoweb: https://github.com/edoweb
+.. _Python client für Elasticsearch: https://pypi.python.org/pypi/elasticsearch/2.3.0
