@@ -30,8 +30,7 @@ setup(
     entry_points={
         'console_scripts':[
             'reindex=hbz.edoweb.reindex:main',
-            'json_es=hbz.edoweb.json_es:main',
-            #'qdc2metadata=dipp.dipp3.qdc2metadata:main'
+            'json_es=hbz.edoweb.json_es:main'
         ]
     },
 )

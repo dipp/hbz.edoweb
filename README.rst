@@ -1,6 +1,9 @@
 hbz.edoweb
 ==========
 
+Installation
+------------
+
 
 .. code-block:: bash
 
@@ -14,7 +17,7 @@ in edoweb:/usr/share/elasticsearch:
 .. code-block:: bash
 
    $ bin/plugin -install elasticsearch/elasticsearch-analysis-icu/2.1.0
-   $bin/plugin -install com.yakaz.elasticsearch.plugins/elasticsearch-analysis-combo/1.5.1 
+   $ bin/plugin -install com.yakaz.elasticsearch.plugins/elasticsearch-analysis-combo/1.5.1 
    $ /etc/init.d/elasticsearch restart
 
    $ bin/plugin -l

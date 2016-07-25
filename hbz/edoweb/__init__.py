@@ -5,6 +5,3 @@ try:
 except ImportError:
     from pkgutil import extend_path
     __path__ = extend_path(__path__, __name__)
-
-# version information
-__version__ = pkg_resources.require("hbz.edoweb")[0].version
