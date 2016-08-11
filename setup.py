@@ -2,7 +2,7 @@
 
 from setuptools import setup, find_packages
 
-__version__ = "0.1"
+__version__ = "0.1.1"
 
 def _read(doc):
     return open(doc, 'rb').read()

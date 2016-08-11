@@ -44,7 +44,8 @@ in edoweb:/usr/share/elasticsearch:
        - analysis-combo
 
 Build
-------------
+-----
+
 .. code-block:: bash
 
    $ cd /tmp
@@ -54,7 +55,8 @@ Build
    $ sudo python setup.py install
    
 Run
----------------
+---
+
 Nun steht das Kommando "reindex" zur Verfügung
 
 .. code-block:: bash
