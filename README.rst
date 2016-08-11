@@ -43,6 +43,31 @@ in edoweb:/usr/share/elasticsearch:
        - head
        - analysis-combo
 
-       
+Build
+------------
+.. code-block:: bash
+
+   $ cd /tmp
+   $ git clone https://github.com/edoweb/hbz.edoweb
+   $ cd hbz.edoweb
+   $ . /opt/python-2.7/bin/activate
+   $ sudo python setup.py install
+   
+Run
+---------------
+Nun steht das Kommando "reindex" zur Verfügung
+
+.. code-block:: bash
+
+   $ reindex -h
+   
+Beispiel:
+
+.. code-block:: bash
+
+   $ reindex -c /opt/regal/regal-api/conf/public-index-config.json frl
+   $ reindex -c /opt/regal/regal-api/conf/public-index-config.json public_frl
+   
+
 .. _edoweb: https://github.com/edoweb
 .. _Python client für Elasticsearch: https://pypi.python.org/pypi/elasticsearch/2.3.0
