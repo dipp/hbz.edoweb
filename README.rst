@@ -21,18 +21,20 @@ verwendet. Unter Ubuntu:
 
 .. code-block:: bash
 
-   $ apt-get install python-virtualenv
-   $ virtualenv /opt/python-2.7
+   $ sudo apt-get install python-virtualenv python-pip
+   $ sudo virtualenv /opt/python-2.7
    $ . /opt/python-2.7/bin/activate
-   $ pip install "elasticsearch>=1.0.0,<2.0.0"
+   $ sudo pip install "elasticsearch>=1.0.0,<2.0.0"
 
 in edoweb:/usr/share/elasticsearch:
 
 .. code-block:: bash
 
+   $ sudo su
+   $ cd /usr/share/elasticsearch
    $ bin/plugin -install elasticsearch/elasticsearch-analysis-icu/2.1.0
    $ bin/plugin -install com.yakaz.elasticsearch.plugins/elasticsearch-analysis-combo/1.5.1 
-   $ /etc/init.d/elasticsearch restart
+   $ service elasticsearch restart
 
    $ bin/plugin -l
 
